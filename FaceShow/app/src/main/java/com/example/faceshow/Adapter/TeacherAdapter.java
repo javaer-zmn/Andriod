@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.faceshow.Activity.Main2Activity;
 import com.example.faceshow.Activity.TeacherDetailActivity;
 import com.example.faceshow.DAO.Teacher;
 import com.example.faceshow.R;
@@ -67,7 +68,10 @@ public class TeacherAdapter extends ArrayAdapter<Teacher> {
             @Override
             public void onClick(View v) {
                 //  初始化一个准备跳转到TeacherDetailActivity的Intent
-                Intent intent = new Intent(getContext(), TeacherDetailActivity.class);
+//                Intent intent = new Intent(getContext(), TeacherDetailActivity.class);
+
+                Intent intent = new Intent(getContext(), Main2Activity.class);
+
 
 
                 // 往Intent中传入Teacher相关的数据，供TeacherDetailActivity使用
