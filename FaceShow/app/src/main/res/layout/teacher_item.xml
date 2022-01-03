@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--
+    根元素<LinearLayout>的android:orientation改为了horizontal，因为我们希望老师的图片和老师的姓名水平线性布局。
+
+ImageView命名为teacher_small_imageView，长宽都为50dp，与上下的间距为5dp。dp是一种长度的单位，也有其他类型的单位，dp能够比较好的兼容各种分辨率的设备。
+
+TextView命名为teacher_name_textView，长宽为根据内容自适应，与左侧图片间距为10dp，垂直居中
+
+    -->
+
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/teacher_small_imageView" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="New Text"
+            android:id="@+id/teacher_name_textView"
+            android:layout_gravity="center_vertical" />
+
+</LinearLayout>
