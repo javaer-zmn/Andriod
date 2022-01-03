@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
 
     //https://blog.csdn.net/Deniece_X/article/details/78625532
 
-    
+
     private SQLiteDatabase db;
     EditText ed_name;
     EditText ed_height;
